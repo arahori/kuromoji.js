@@ -12,6 +12,8 @@
   "dependencies": {
     "async": "^2.0.1",
     "doublearray": "0.0.2",
+    "path-browserify": "^1.0.1",
+    "react-zlib-js": "^1.0.5",
     "zlibjs": "^0.3.1"
   },
   "devDependencies": {
@@ -20,7 +22,7 @@
     "coveralls": "^3.0.0",
     "del": "^3.0.0",
     "event-stream": "^3.3.4",
-    "gulp": "^3.8.10",
+    "gulp": "^4.0.0",
     "gulp-bower": "0.0.14",
     "gulp-bump": "^3.1.0",
     "gulp-conventional-changelog": "^1.1.0",
