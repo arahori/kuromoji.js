@@ -17,7 +17,8 @@
 
 'use strict';
 
-var zlib = require('react-zlib-js');
+// var zlib = require('react-zlib-js');
+var fflate = require('fflate');
 var DictionaryLoader = require('./DictionaryLoader');
 // import zlib from 'react-zlib-js';
 // import DictionaryLoader from './DictionaryLoader';
@@ -48,9 +49,8 @@ BrowserDictionaryLoader.prototype.loadArrayBuffer = function (url, callback) {
     }
     var arraybuffer = this.response;
 
-    var gz = new zlib.Zlib.Gunzip(new Uint8Array(arraybuffer));
-    var typed_array = gz.decompress();
-    callback(null, typed_array.buffer);
+    var gz = fflate.gunzipSync(new Uint8Array(arraybuffer));
+    callback(null, gz);
   };
   xhr.onerror = function (err) {
     callback(err, null);

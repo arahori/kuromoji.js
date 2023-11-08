@@ -12,6 +12,7 @@
   "dependencies": {
     "async": "^3.2.5",
     "doublearray": "0.0.2",
+    "fflate": "^0.8.1",
     "path-browserify": "^1.0.1",
     "react-zlib-js": "^1.0.5",
     "zlibjs": "^0.3.1"
