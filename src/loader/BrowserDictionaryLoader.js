@@ -17,7 +17,7 @@
 
 'use strict';
 
-var zlib = require('react-zlibs-js');
+var zlib = require('react-zlib-js');
 var DictionaryLoader = require('./DictionaryLoader');
 
 /**
