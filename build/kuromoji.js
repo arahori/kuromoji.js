@@ -22254,7 +22254,8 @@ module.exports = kuromoji;
 
 var zlib = require('react-zlib-js');
 var DictionaryLoader = require('./DictionaryLoader');
-
+// import zlib from 'react-zlib-js';
+// import DictionaryLoader from './DictionaryLoader';
 /**
  * BrowserDictionaryLoader inherits DictionaryLoader, using jQuery XHR for download
  * @param {string} dic_path Dictionary path

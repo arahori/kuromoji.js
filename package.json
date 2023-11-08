@@ -6,7 +6,6 @@
   "browser": {
     "./src/loader/NodeDictionaryLoader.js": "./src/loader/BrowserDictionaryLoader.js"
   },
-  "type": "module",
   "bugs": {
     "url": "https://github.com/takuyaa/kuromoji.js/issues"
   },

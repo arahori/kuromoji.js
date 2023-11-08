@@ -26,7 +26,6 @@ gulp.task('clean', (done) => {
 
 // gulp.task('build', gulp.series('clean'), () => {
 gulp.task('build', () => {
-  console.log('aaaa');
   const result = browserify({
     entries: ['src/kuromoji.js'],
     standalone: 'kuromoji', // window.kuromoji
@@ -34,7 +33,6 @@ gulp.task('build', () => {
     .bundle()
     .pipe(source('kuromoji.js'))
     .pipe(gulp.dest('build/'));
-  console.log(result);
   return result;
 });
 
